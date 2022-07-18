@@ -9,8 +9,10 @@ if ((nombreUsuario != '') && (apellidoUsuario != '')) {
 
 alert('Mira todas las peliculas que tenemos en cartelera para vos');
 
-let opcion = prompt('Selecciona la pelicula que desearias ver. \n 1. Minions: nace un villano \n 2. Thor: amor y trueno \n 3. Lightyear \n 4.  Jurassic World: Dominion \n 5. The Black Phone \n 6. Top Gun: Maverick \n Presiona X para finalizar')
 
+ const peliculas= ['1. Minions: nace un villano', '2. Thor: amor y trueno', '3. Lightyear', '4. Jurassic World: Dominion', '5. The Black Phone', '6. Top Gun: Maverick', 'Presiona X para finalizar']
+
+ let opcion = prompt('Selecciona la pelicula que desearias ver: '+ peliculas);
 
 function mostrarInfo (nombreFuncion, horario1, horario2) {
     alert('Elegiste '+ nombreFuncion);
