@@ -78,14 +78,14 @@ console.log(filtradoPorHorario);
 console.log(filtradoPorHorario2);
 
 
-const busqueda = peliculasEnCartelera.some ((pelicula) => pelicula.genero == 'terror');
+const busquedaPorGenero = peliculasEnCartelera.filter ((pelicula) => pelicula.genero == 'terror');
 console.log(busqueda);
 
-const busqueda1 = peliculasEnCartelera.some ((pelicula) => pelicula.genero == 'accion');
+const busquedaPorGenero1 = peliculasEnCartelera.filter ((pelicula) => pelicula.genero == 'accion');
 console.log(busqueda1);
 
-const busqueda2 = peliculasEnCartelera.some ((pelicula) => pelicula.genero == 'infantil');
+const busquedaPorGenero2 = peliculasEnCartelera.filter ((pelicula) => pelicula.genero == 'infantil');
 console.log(busqueda2);
 
-const busqueda3 = peliculasEnCartelera.some ((pelicula) => pelicula.genero == 'aventura' );
+const busquedaPorGenero3 = peliculasEnCartelera.filter ((pelicula) => pelicula.genero == 'aventura' );
 console.log(busqueda3);
