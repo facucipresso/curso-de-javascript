@@ -6,3 +6,23 @@ body{
 h1 {
     text-align: center;
 }
+
+.navbar {
+    height: 4rem;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+.nav-bar-derecha {
+    text-align: end;
+}
+
+.bg-vb {
+    background-color: blueviolet;
+}
+
+.llenarConNombre {
+    font-size: 1.8rem;
+}

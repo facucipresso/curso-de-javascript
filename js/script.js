@@ -1,8 +1,15 @@
 let nombreUsuario = prompt('Ingresa tu nombre');
 let apellidoUsuario = prompt('Ingresa tu apellido');
 
+let tituloPro = document.querySelector('.llenarConNombre');
+
+let nuevoTitulo =('Bienvenido ' + nombreUsuario + ' a Showcenter, el mejor cine de la Republica Argentina!');
+
+ 
+
+
 if ((nombreUsuario != '') && (apellidoUsuario != '')) {
-    alert('Bienvenido ' + nombreUsuario + ' al Showcenter, el mejor cine de la Republica Argentina!');
+    tituloPro.innerText = nuevoTitulo;
 } else {
     alert('Error al ingresar nombre y apellido, vuelva a intentarlo');
 }
@@ -78,14 +85,24 @@ console.log(filtradoPorHorario);
 console.log(filtradoPorHorario2);
 
 
-const busquedaPorGenero = peliculasEnCartelera.filter ((pelicula) => pelicula.genero == 'terror');
-console.log(busqueda);
+const busquedaPorGenero = peliculasEnCartelera.find ((pelicula) => pelicula.genero == 'terror');
+console.log(busquedaPorGenero);
 
-const busquedaPorGenero1 = peliculasEnCartelera.filter ((pelicula) => pelicula.genero == 'accion');
-console.log(busqueda1);
+const busquedaPorGenero1 = peliculasEnCartelera.find ((pelicula) => pelicula.genero == 'accion');
+console.log(busquedaPorGenero1);
 
-const busquedaPorGenero2 = peliculasEnCartelera.filter ((pelicula) => pelicula.genero == 'infantil');
-console.log(busqueda2);
+const busquedaPorGenero2 = peliculasEnCartelera.find ((pelicula) => pelicula.genero == 'infantil');
+console.log(busquedaPorGenero2);
 
-const busquedaPorGenero3 = peliculasEnCartelera.filter ((pelicula) => pelicula.genero == 'aventura' );
-console.log(busqueda3);
+const busquedaPorGenero3 = peliculasEnCartelera.find ((pelicula) => pelicula.genero == 'aventura' );
+console.log(busquedaPorGenero3);
+
+
+let elementoID = document.getElementById('subtituloEstrenos');
+console.log(elementoID);
+
+let elementostag = document.getElementsByTagName('h2');
+console.log(elementostag);
+
+let titulo = document.querySelector('.tituloPrincipal');
+console.log(titulo);
