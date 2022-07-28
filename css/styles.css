@@ -7,6 +7,10 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
+
 .navbar {
     height: 4rem;
 }
@@ -26,3 +30,4 @@ h1 {
 .llenarConNombre {
     font-size: 1.8rem;
 }
+

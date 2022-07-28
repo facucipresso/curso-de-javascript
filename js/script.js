@@ -3,9 +3,12 @@ let apellidoUsuario = prompt('Ingresa tu apellido');
 
 let tituloPro = document.querySelector('.llenarConNombre');
 
-let nuevoTitulo =('Bienvenido ' + nombreUsuario + ' a Showcenter, el mejor cine de la Republica Argentina!');
+let nuevoTitulo =('Bienvenido ' + nombreUsuario + ' a Showcenter, el mejor cine de la Republica Argentina!');  
 
- 
+/* let bienvenida = document.createElement('h3');
+bienvenida.className = 'ConNombre';
+bienvenida.innerHTML = `<h3>Bienvenido ${nombreUsuario} a Showcenter, el mejor cine de la Republica Argentina!</h3>`;
+nuevoH.apendChild(bienvenida);  */
 
 
 if ((nombreUsuario != '') && (apellidoUsuario != '')) {
@@ -106,3 +109,43 @@ console.log(elementostag);
 
 let titulo = document.querySelector('.tituloPrincipal');
 console.log(titulo);
+
+
+const btnComprarEntradas = document.getElementById('topGun');
+const btnComprarEntradas1 = document.getElementById('jurassicWorld');
+const btnComprarEntradas2= document.getElementById('Lightyear');
+const btnComprarEntradas3= document.getElementById('Minions');
+const btnComprarEntradas4= document.getElementById('Thor');
+const btnComprarEntradas5= document.getElementById('elTelefononNegro');
+
+
+
+function comprarEntTopGun (){
+    alert('Estas por comprar entradas para ver "Top Gun: Maverick"')
+}
+function comprarEntJurassicWord (){
+    alert('Estas por comprar entradas para ver "Jurassic World: Dominion"')
+}
+function comprarEntlightyear (){
+    alert('Estas por comprar entradas para ver "TLightyear"')
+}
+function comprarEntMinions (){
+    alert('Estas por comprar entradas para ver "Minions: nacae un villano"')
+}
+function comprarEntThor (){
+    alert('Estas por comprar entradas para ver "Thor: Love and Thunder"')
+}
+function comprarEntElTelefononNegro (){
+    alert('Estas por comprar entradas para ver "El Telefono Negro"')
+}
+
+
+
+
+btnComprarEntradas.addEventListener('click', comprarEntTopGun);
+btnComprarEntradas1.addEventListener('click', comprarEntJurassicWord);
+btnComprarEntradas2.addEventListener('click', comprarEntlightyear);
+btnComprarEntradas3.addEventListener('click', comprarEntMinions);
+btnComprarEntradas4.addEventListener('click', comprarEntThor);
+btnComprarEntradas5.addEventListener('click', comprarEntElTelefononNegro);
+
