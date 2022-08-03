@@ -111,7 +111,7 @@ let titulo = document.querySelector('.tituloPrincipal');
 console.log(titulo);
 
 
-const btnComprarEntradas = document.getElementById('topGun');
+/* const btnComprarEntradas = document.getElementById('topGun');
 const btnComprarEntradas1 = document.getElementById('jurassicWorld');
 const btnComprarEntradas2= document.getElementById('Lightyear');
 const btnComprarEntradas3= document.getElementById('Minions');
@@ -147,5 +147,19 @@ btnComprarEntradas1.addEventListener('click', comprarEntJurassicWord);
 btnComprarEntradas2.addEventListener('click', comprarEntlightyear);
 btnComprarEntradas3.addEventListener('click', comprarEntMinions);
 btnComprarEntradas4.addEventListener('click', comprarEntThor);
-btnComprarEntradas5.addEventListener('click', comprarEntElTelefononNegro);
+btnComprarEntradas5.addEventListener('click', comprarEntElTelefononNegro); */
+
+const btnEntradas = document.getElementsByClassName('entradas');
+
+
+
+ function compraDeEntradas (evento){
+    alert('Estas comprando entradas');
+    console.log(evento);
+    
+}
+
+for (var i = 0 ; i < btnEntradas.length; i++) {
+    btnEntradas[i].addEventListener('click', compraDeEntradas ) ; 
+} 
 

@@ -31,3 +31,8 @@ h2 {
     font-size: 1.8rem;
 }
 
+.card {
+    display: grid;
+    margin: 2vh;
+}
+
