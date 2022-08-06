@@ -2,13 +2,17 @@ body{
     background-color:blueviolet ;
 }
 
+main{
+    display: grid;
+    justify-content: center;
+}
 
 h1 {
-    text-align: center;
+    justify-content: center;
 }
 
 h2 {
-    text-align: center;
+   justify-content: center;
 }
 
 .navbar {
@@ -32,7 +36,8 @@ h2 {
 }
 
 .card {
-    display: grid;
+    display: flex;
     margin: 2vh;
+ 
 }
 
