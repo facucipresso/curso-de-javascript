@@ -7,8 +7,6 @@ const peliculasEnCartelera = [{ id: '1', titulo: 'Minions: nace un villano', ima
 
 
 const btnEntradas = document.getElementsByClassName('entradas');
-
-
 const estrenos = document.getElementById('subtituloEstrenos');
 
 for (const pelicula of peliculasEnCartelera) {
@@ -22,8 +20,6 @@ for (const pelicula of peliculasEnCartelera) {
             </div>
         </div>` 
 }
-
-
 
 function mostrarInfo() {
     const checkoutPeliculas = document.getElementById('checkoutPeliculas');
@@ -45,8 +41,6 @@ function mostrarInfo() {
         btnBorrar.addEventListener('click', (e) => {
             const idPelicula = e.target.getAttribute('data-id');
             const indiceElemento = peliculasSeleccionadas.findIndex(item => item.id === idPelicula)
-            peliculasSeleccionadas.splice(indiceElemento, 1)
-            mostrarInfo();
             Swal.fire({
                 position: 'top-center',
                 icon: 'warning',
@@ -54,10 +48,13 @@ function mostrarInfo() {
                 title: '¿Estas seguro que queres eliminar la pelicula?',
                 showConfirmButton: true,
                 confirmButtonColor: '#b01518',
-                confirmButtonText:'Si, quiero borrar',
-                
+                confirmButtonText:'Si, quiero borrar', 
+              }).then ((confirmacion)=>{
+                if (confirmacion.isConfirmed){
+                    peliculasSeleccionadas.splice(indiceElemento, 1)
+                    mostrarInfo();
+                }
               })
-            
         })
     }
 
@@ -97,15 +94,15 @@ let peliculasRecuperadas = JSON.parse(sessionStorage.getItem('peliculas'));
 console.log(peliculasRecuperadas);
 
 const DateTime = luxon.dateTime;
-
-const ahora = luxon.DateTime.now();
-//console.log(ahora); 
+const ahora = luxon.DateTime.now(); 
 console.log(ahora.toString());
 console.log(ahora.toLocaleString());
-console.log(ahora.toLocaleString(DateTime.TIME_SIMPLE));
-console.log(ahora.toLocaleString(DateTime.DATE_HUGE));
 
-console.log(ahora.toLocaleString(DateTime.DATE_FULL));
+
+
+
+
+
 
 
 
